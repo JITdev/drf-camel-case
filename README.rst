@@ -1,14 +1,8 @@
-====================================
-Django REST Framework JSON CamelCase
-====================================
+========================================================
+Django REST Framework JSON CamelCase with orjson support
+========================================================
 
-.. image:: https://travis-ci.org/vbabiy/djangorestframework-camel-case.svg?branch=master
-        :target: https://travis-ci.org/vbabiy/djangorestframework-camel-case
-
-.. image:: https://badge.fury.io/py/djangorestframework-camel-case.svg
-    :target: https://badge.fury.io/py/djangorestframework-camel-case
-
-Camel case JSON support for Django REST framework.
+Camel case JSON support for Django REST framework with orjson.
 
 ============
 Installation
@@ -16,7 +10,7 @@ Installation
 
 At the command line::
 
-    $ pip install djangorestframework-camel-case
+    $ pip install drf-camel-case
 
 Add the render and parser to your django settings file.
 
