@@ -7,7 +7,7 @@ from django.utils.functional import lazy
 
 from rest_framework.utils.serializer_helpers import ReturnDict
 
-from djangorestframework_camel_case.util import camelize, underscoreize
+from drf_camel_case.util import camelize, underscoreize
 
 settings.configure()
 
@@ -17,9 +17,9 @@ class ImportTest(TestCase):
         """
         A quick test that just imports everything, should crash in case any Django or DRF modules change
         """
-        from djangorestframework_camel_case import parser
-        from djangorestframework_camel_case import render
-        from djangorestframework_camel_case import settings
+        from drf_camel_case import parser
+        from drf_camel_case import render
+        from drf_camel_case import settings
 
         assert parser
         assert render
