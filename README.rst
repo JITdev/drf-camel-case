@@ -20,16 +20,16 @@ Add the render and parser to your django settings file.
     REST_FRAMEWORK = {
 
         'DEFAULT_RENDERER_CLASSES': (
-            'djangorestframework_camel_case.render.CamelCaseJSONRenderer',
-            'djangorestframework_camel_case.render.CamelCaseBrowsableAPIRenderer',
+            'drf_camel_case.render.CamelCaseJSONRenderer',
+            'drf_camel_case.render.CamelCaseBrowsableAPIRenderer',
             # Any other renders
         ),
 
         'DEFAULT_PARSER_CLASSES': (
             # If you use MultiPartFormParser or FormParser, we also have a camel case version
-            'djangorestframework_camel_case.parser.CamelCaseFormParser',
-            'djangorestframework_camel_case.parser.CamelCaseMultiPartParser',
-            'djangorestframework_camel_case.parser.CamelCaseJSONParser',
+            'drf_camel_case.parser.CamelCaseFormParser',
+            'drf_camel_case.parser.CamelCaseMultiPartParser',
+            'drf_camel_case.parser.CamelCaseJSONParser',
             # Any other parsers
         ),
     }
@@ -90,7 +90,7 @@ Alternatively, you can change this behavior on a class level by setting `json_un
 
 .. code-block:: python
 
-    from djangorestframework_camel_case.parser import CamelCaseJSONParser
+    from drf_camel_case.parser import CamelCaseJSONParser
     from rest_framework.generics import CreateAPIView
 
     class NoUnderscoreBeforeNumberCamelCaseJSONParser(CamelCaseJSONParser):
